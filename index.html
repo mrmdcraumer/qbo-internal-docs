@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Check → QBO (Internal) · Morgan Records Management</title>
+<style>
+  body{font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;margin:40px;max-width:820px}
+  header,footer{margin:24px 0}
+  nav a{margin-right:12px}
+  code{background:#f6f8fa;padding:2px 6px;border-radius:4px}
+</style>
+<header>
+  <h1>Check → QBO (Internal)</h1>
+  <p><strong>Morgan Records Management</strong></p>
+</header>
+
+<main>
+  <p>This internal integration helps Accounting cancel matching PayPal invoices and
+  create QuickBooks Online payments for incoming checks. It is for internal use only.</p>
+
+  <h2>Support</h2>
+  <p>Contact: <a href="mailto:dcraumer@morganrecords.com">Dan Craumer</a></p>
+
+  <h2>Docs</h2>
+  <nav>
+    <a href="./eula.html">EULA</a>
+    <a href="./privacy.html">Privacy</a>
+    <a href="./disconnect.html">Disconnect</a>
+  </nav>
+
+  <h2>Technical notes</h2>
+  <ul>
+    <li>Uses OAuth 2.0 with QBO; least-privilege scopes (Accounting).</li>
+    <li>PDF deposit details are attached to the created QBO Payment.</li>
+  </ul>
+</main>
+
+<footer>
+  <small>© <span id="y"></span> Morgan Records Management</small>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</html>
